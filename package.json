@@ -1,0 +1,40 @@
+{
+  "name": "issuance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "console": "hardhat console",
+    "stat": "hardhat stat --network ${NETWORK}",
+    "deploy": "hardhat run scripts/01_deploy_is.ts",
+    "setup-event": "hardhat run scripts/02_setup_event.ts",
+    "set-event": "hardhat run scripts/03_set_event.ts",
+    "start-event": "hardhat run scripts/04_start_event.ts",
+    "close-event": "hardhat run scripts/05_close_event.ts",
+    "set-token": "hardhat run scripts/06_setup_token.ts",
+    "withdraw-event": "hardhat run scripts/07_withdraw_event.ts",
+    "re-setup-event": "hardhat run scripts/08_re_setup_event.ts",
+    "start-private-sale": "hardhat run scripts/start_private_sale.ts"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-solhint": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.2.1",
+    "ethers": "^5.0.23",
+    "hardhat": "^2.0.4",
+    "hardhat-gas-reporter": "^1.0.3",
+    "ts-generator": "^0.1.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.10",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
+  }
+}
